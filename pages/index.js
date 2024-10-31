@@ -36,9 +36,7 @@ export default function Home() {
             priority
           />
           <ol>
-            <li>
-              Get started by editing <code>pages/index.js</code>.
-            </li>
+            <li>HELLO!!!!!!!!!!!</li>
             <li>Save and see your changes instantly.</li>
           </ol>
 
