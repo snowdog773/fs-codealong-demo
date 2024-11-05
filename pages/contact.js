@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import localFont from "next/font/local";
-import { Box, Button } from "@/components/mui";
 import Layout from "@/components/Layout";
-export default function Home() {
+import ContactForm from "@/components/forms/ContactForm";
+import Heading from "@/components/Heading";
+import { sendEmail } from "@/lib/api-functions/client";
+export default function Contact() {
   return (
     <>
       <Head>
@@ -12,8 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Layout>
-        <h1>Home Page</h1>
+        <Heading>Contact</Heading>
+        <ContactForm submitHandler={sendEmail} />
       </Layout>
     </>
   );
